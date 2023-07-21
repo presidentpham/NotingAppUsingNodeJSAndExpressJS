@@ -1,0 +1,14 @@
+<div class="card car-body p-2">
+    <h3>Create a new post</h3>
+    <form action="/posts" method="post">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" required value="{{title}}">
+        </div>
+        <div class="form-group">
+            <label for="text">Content</label>
+            <textarea name="text" class="form-control" required>{{text}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Create post</button>
+    </form>
+</div>

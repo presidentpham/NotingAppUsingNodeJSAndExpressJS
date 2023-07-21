@@ -1,0 +1,15 @@
+<div class="card car-body p-2">
+    <h3>Edit post</h3>
+    <form action="/posts/{{post._id}}?_method=PUT" method="POST">\
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" required value="{{post.title}}">
+        </div>
+        <div class="form-group">
+            <label for="text">Content</label>
+            <textarea name="text" class="form-control" required>{{post.text}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Agree</button>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-3">
+    <div class="container">
+        <img src="/images/IMG_0697.jpg" class="rounded mx-auto d-block" width="5%" height="5%">
+        <a href="/" class="navbar-brand ml-2">POSTS</a>
+        <!-- Collapsible navigation bar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Main navigation bar-->
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts" class="nav-link">AllPosts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <!-- Dropdown button -->
+            <div class="dropdown ml-auto">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Posts
+                </button>
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/posts">All Posts</a>
+                    <a class="dropdown-item" href="/posts/add">Create a new post</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
